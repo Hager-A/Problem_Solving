@@ -9,8 +9,7 @@ public class Solution {
      {
          x[0] = i;
          x[1] = y;
-         //Console.WriteLine($"{i} {y}");
-         //break;
+         
          return x;
      }
  }
