@@ -1,9 +1,8 @@
 public class Solution {
     public string Convert(string s, int numRows) {
-        if (s.Length == 1)
+        if (s.Length == 1 || numRows == 1)
     return s;
-if (numRows == 1)
-    return s;
+
 if (numRows > s.Length)
     numRows = s.Length;
 int traget = numRows - 2+numRows;
