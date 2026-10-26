@@ -1,11 +1,6 @@
 public class Solution {
     public int MissingNumber(int[] nums) {
-         if (nums.Count() == 1)
- {
-     if (nums[0] == 1)
-         return 0;
-     return nums[0] + 1;
- }
+        
 
  var res = nums.OrderBy(a => a).ToList();
  if (res[0] == 1)
