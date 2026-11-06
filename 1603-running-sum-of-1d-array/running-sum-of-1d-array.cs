@@ -1,13 +1,12 @@
 public class Solution {
     public int[] RunningSum(int[] nums) {
-        List<int> arr = [];
-int addnumber = 0;
-for(int i = 0; i < nums.Length; i++)
-{
-    addnumber += nums[i];
-    arr.Add(addnumber);
+         int addnumber = 0;
+ for(int i = 0; i < nums.Length; i++)
+ {
+     addnumber += nums[i];
+     nums[i] = addnumber;
 
-}
-return arr.ToArray();
+ }
+ return nums;
     }
 }
