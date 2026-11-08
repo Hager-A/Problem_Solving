@@ -1,7 +1,7 @@
 public class Solution {
     public int ThirdMax(int[] nums) {
-        nums = nums.Distinct().OrderByDescending(a => a).ToArray();
-        return nums.Length>=3 ?nums.Take(3).Min(): nums.Max();
+       var res = nums.Distinct().OrderByDescending(a => a);
+        return res.Count()>=3 ?res.Take(3).Min(): res.Max();
 
     }
 }
